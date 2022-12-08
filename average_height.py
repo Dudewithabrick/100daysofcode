@@ -8,13 +8,13 @@ for n in range(0, len(student_heights)):
 #mportant You should not use the sum() or len() functions in your answer. You should try to replicate their functionality using what you have learnt about for loops.
 #Write your code below this row 👇
 sum_of_heights = 0
-index = 0
+student_count = 0
 
 for heights in student_heights:
-    index += 1
+    student_count += 1
     sum_of_heights += heights
 
-average_height = sum_of_heights / index
+average_height = sum_of_heights / student_count
 
 print(round(average_height))
 
