@@ -16,6 +16,6 @@ for number in range (1, 101):
         answer = "Fizz"
     if number % 5 == 0 and number % 3 == 0:
             answer = "FizzBuzz"
-    elif number % 5 == 0:
+    if answer != "FizzBuzz" and number % 5 == 0:
         answer = "Buzz"
     print(answer)
