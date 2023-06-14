@@ -20,9 +20,8 @@ for _ in range (nr_numbers):
   password += random.choice(numbers)   #adds random numbers to the password list nr_letter times
 
 '''extracting all list entries out of the list'''
-new_password = ""
-for i in range (0, len(password)):
-  new_password += f"{password[i]}"
+
+password = "".join(password)#password is changed from a list of strings to a string.
 
 print (f"Your new password is:{new_password}")
 
@@ -40,8 +39,6 @@ for _ in range (nr_numbers):
 '''extracting all list entries out of the list in randomized order'''
 
 random.shuffle(password)
-new_password = ""
-for char in range (len(password)):
-  new_password += f"{password[char]}"
+password = "".join(password) #password is changed from a list of strings to a string.
   
 print (f"Your new random password is:{new_password}")
